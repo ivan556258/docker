@@ -10,8 +10,6 @@ services:
         volumes:
             - ./:/srv/www/api
             - ./docker/php/www.conf:/usr/local/etc/php-fpm.d/www.conf
-        depends_on:
-            - mysql
  
     nginx:
         image: nginx:1.13.8
